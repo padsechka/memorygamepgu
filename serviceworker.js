@@ -21,7 +21,7 @@ const RUNTIME = 'runtime';
 // Что мы хотим кэшить
 const PRECACHE_URLS = [
   'index.html',
-  'logo192.jpg',
+  'logo1200.png',
   'logo512.jpg'
   'show.css'
   'show.js'
