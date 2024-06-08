@@ -1,0 +1,121 @@
+/* Стили для стартового экрана */
+#logo, #end-game-msg {
+  font-family: 'Junge', serif; /* Шрифт */
+  font-size: 70px; /* Размер шрифта */
+  padding-top:20%; /* Отступ сверху */
+  text-align: center; /* Выравнивание по центру */
+}
+
+#end-game-msg {
+    padding-top: 15%; /* Отступ сверху */
+}
+
+#start, #start-over {
+  font-family: 'Ranchers', cursive; /* Шрифт */
+  font-size:50px; /* Размер шрифта */
+  padding-top:1%; /* Отступ сверху */
+  text-align: center; /* Выравнивание по центру */
+}
+
+#start:hover, #quit:hover, #start-over:hover {
+	cursor: pointer; /* Изменение курсора при наведении */
+	color:#4e4e4e; /* Цвет текста */
+}
+
+#start-window, #end-game-window {
+  display:block; /* Отображение блока */
+  position:relative; /* Позиционирование */
+  width:100%; /* Ширина */
+  height:100%; /* Высота */
+  background-color: #FFFFFF; /* Цвет фона */
+}
+
+#end-game-window {
+    border-bottom: 1px solid black; /* Граница снизу */
+}
+
+/* Основные стили игры */
+#play-window{
+  position:absolute; /* Позиционирование */
+  display:block; /* Отображение блока */
+  display:none; /* Скрытие блока */
+  height:100%; /* Высота */
+  width:100%; /* Ширина */
+}
+
+.game-block{
+  border:1px solid #000; /* Граница */
+  position:absolute; /* Позиционирование */
+  width:130px; /* Ширина */
+  height:130px; /* Высота */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Позиционирование и цвет каждого игрового блока */
+#game-block1{
+  left:325px;
+  top: 100px;
+  border-color:#0f7ac5;
+}
+
+#game-block2{
+  left:170px;
+  top:210px;
+  border-color:#14a88e;
+}
+
+#game-block3{
+  left:170px;
+  top:350px;
+  border-color:#3fdf29;
+}
+
+#game-block4{
+  left:325px;
+  top:460px;
+  border-color:#aa2918;
+}
+
+#game-block5{
+  left:479px;
+  top:210px;
+  border-color:#dc30da;
+}
+
+#game-block6{
+  left:479px;
+  top:350px;
+  border-color:#901fe7;
+}
+
+#status-window{
+  position:absolute; /* Позиционирование */
+  left:650px; /* Отступ слева */
+  top:150px; /* Отступ сверху */
+}
+
+.level, .score, #notif-msg {
+  font-family: helvetica; /* Шрифт */
+  font-size: 30px; /* Размер шрифта */
+}
+
+#notif-msg {
+  position: relative; /* Позиционирование */
+  top:80px; /* Отступ сверху */
+}
+
+#quit{
+  font-family: 'Ranchers', cursive; /* Шрифт */
+  font-size:50px; /* Размер шрифта */
+  position:absolute; /* Позиционирование */
+  left:700px; /* Отступ слева */
+  top:500px; /* Отступ сверху */
+}
+
+.fail {
+    color: red; /* Цвет текста */
+}
+
+.success {
+    color:#168d10; /* Цвет текста */
+}

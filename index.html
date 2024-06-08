@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="show.css">
+        <link href='http://fonts.googleapis.com/css?family=Junge' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ranchers' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js?ver=3.5"></script>
+        <script type="text/javascript" src="show.js"></script>
+		
+<script type="text/javascript">
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('serviceworker.js')
+                .then(function(registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+            }
+</script>
+
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="game-area">
+                <div id="start-window">
+                    <div id="logo">JS Игра на запоминание</div>
+                    <div id="start">СТАРТ</div>
+                </div>
+                <div id="play-window">
+                    <div id="game-block1" class="game-block"></div>
+                    <div id="game-block2" class="game-block"></div>
+                    <div id="game-block3" class="game-block"></div>
+                    <div id="game-block4" class="game-block"></div>
+                    <div id="game-block5" class="game-block"></div>
+                    <div id="game-block6" class="game-block"></div>
+
+                    <div id="status-window">
+                        <div id="level-label" class="level">УРОВЕНЬ: <span id="level">1/20</span></div>
+                        <div id="score-label" class="score">СЧЁТ: <span id="score">0</span></div>
+                        <div id="notif-msg"></div>
+                    </div>
+
+                    <div id="quit">ВЫХОД</div>
+                </div>
+                <div id="end-game-window">
+                    <div id="end-game-msg"></div>
+                    <br>
+                    <div id="start-over">НАЧАТЬ СНАЧАЛА</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
