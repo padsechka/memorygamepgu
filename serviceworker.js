@@ -25,7 +25,7 @@ const PRECACHE_URLS = [
   'logo512.jpg'
   'show.css'
   'show.js'
-  'manifest.js'
+  'manifest.json'
   'jquery.js'
 ];
 //  './', // Alias for index.html
