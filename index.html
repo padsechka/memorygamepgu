@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="show.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="show.js"></script>
+<link rel="manifest" href="manifest.json">
+		
+<script type="text/javascript">
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('serviceworker.js')
+                .then(function(registration) {
+                    console.log('Registration successful, scope is:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('Service worker registration failed, error:', error);
+                });
+            }
+</script
 </head>
 <body>
     <div class="container">
